@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/styles/basic.css" />
+    <link rel="stylesheet" href="./Assets/styles/style.css" />
+  </head>
+
+  <body>
+    <div id="main-container" class="w-50 m-lr-a h-100 p-t-16 p-b-8">
+      <h3 class="t-a-c w-80 p-b-8 b-b-w m-lr-a p-8">
+        Student Registration Form
+      </h3>
+      <form action="" class="f-c j-c-c w-80 a-i-c m-lr-a g-16">
+        <div id="firstname-box" class="f-c w-100 m-lr-a g-8 m-t-8">
+          <label for="firstname">Firstname:</label>
+          <div class="b-g-w h-100 f-r a-i-c j-c-sb h-2-5-r">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Firstname"
+              class="b-no p-l-8 o-l-n w-80"
+            />
+            <span id="firstname_validation" class="show_valid"></span>
+          </div>
+        </div>
+        <div id="phone-box" class="f-c w-100 m-lr-a g-8 m-t-8">
+          <label for="phone-code">Phone:</label>
+          <div class="b-g-w h-100 f-r a-i-c j-c-sb h-2-5-r">
+            <input
+              type="text"
+              name="phone-code"
+              id="phone-code"
+              value="+91"
+              class="b-no p-l-8 o-l-n w-80"
+            />
+            <span id="phone-code_validation" class="show_valid"></span>
+          </div>
+          <div class="b-g-w h-100 f-r a-i-c j-c-sb h-2-5-r">
+            <input
+              type="text"
+              name="phone-number"
+              id="phone-number"
+              placeholder="phone no"
+              class="b-no p-l-8 o-l-n w-80"
+            />
+            <span id="phone-number_validation" class="show_valid"></span>
+          </div>
+        </div>
+        <div id="email-box" class="f-c w-100 m-lr-a g-8 m-t-8">
+          <label for="email">Email:</label>
+          <div class="b-g-w h-100 f-r a-i-c j-c-sb h-2-5-r">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+              pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+"
+              class="b-no p-l-8 o-l-n w-80"
+            />
+            <span id="email_validation" class="show_valid"></span>
+          </div>
+        </div>
+        <div id="password-box" class="f-c w-100 m-lr-a g-8 m-t-8">
+          <label for="password">Password:</label>
+          <div class="b-g-w h-100 f-r a-i-c j-c-sb h-2-5-r">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+              class="b-no p-l-8 o-l-n w-80"
+              title="Password length must be at least 8 characters (lowercase and uppercase alphabets, digits, and special characters)"
+            />
+            <span id="password_validation" class="show_valid"></span>
+          </div>
+        </div>
+        <div id="rePassword-box" class="f-c w-100 m-lr-a g-8 m-t-8">
+          <label for="rePassword">Re-type Password:</label>
+          <div class="b-g-w h-100 f-r a-i-c j-c-sb h-2-5-r">
+            <input
+              type="password"
+              name="rePassword"
+              id="rePassword"
+              placeholder="Retype Password"
+              class="b-no p-l-8 o-l-n w-80"
+            />
+            <span id="rePassword_validation" class="show_valid"></span>
+          </div>
+        </div>
+        <button id="submit" class="t-a-c t-c-w h-2-5-r w-100 b-no">
+          Register
+        </button>
+      </form>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
